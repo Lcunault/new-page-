@@ -1,0 +1,26 @@
+{
+  "name": "pokemon-amazon-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Assistant local pour les produits Pokemon en achat sur invitation sur Amazon : suivi, demande d'invitation (une seule fois par produit) et verification quotidienne du passage en \"Ajouter au panier\".",
+  "bin": {
+    "pokebot": "src/cli.js"
+  },
+  "scripts": {
+    "setup": "playwright install chromium",
+    "login": "node src/cli.js login",
+    "scan": "node src/cli.js scan",
+    "request": "node src/cli.js request",
+    "check": "node src/cli.js check",
+    "daily": "node src/cli.js daily",
+    "status": "node src/cli.js status",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0"
+  }
+}

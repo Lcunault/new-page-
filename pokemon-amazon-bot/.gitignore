@@ -1,0 +1,7 @@
+node_modules/
+config.json
+data/state.json
+data/state.json.bak
+data/logs/
+data/diagnostics/
+browser-profile/

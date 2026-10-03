@@ -1,0 +1,32 @@
+{
+  "marketplace": "https://www.amazon.fr",
+  "locale": "fr-FR",
+  "timezone": "Europe/Paris",
+
+  "browser": {
+    "profileDir": "./browser-profile",
+    "channel": "chrome",
+    "headless": false,
+    "slowMoMs": 120
+  },
+
+  "_sources_note": "Remplace la 2e entree par l'URL EXACTE de la boutique Pokemon telle qu'elle apparait dans ta barre d'adresse (les URL /stores/ contiennent un identifiant propre a chaque pays et changent). La 1re entree, une recherche, marche telle quelle.",
+  "sources": [
+    "https://www.amazon.fr/s?k=pokemon+coffret+dresseur+elite&i=toys",
+    "COLLE-ICI-L-URL-DE-LA-BOUTIQUE-POKEMON"
+  ],
+
+  "pacing": {
+    "minDelayMs": 7000,
+    "maxDelayMs": 20000,
+    "maxPagesPerRun": 20,
+    "minHoursBetweenChecks": 20,
+    "pauseAfterPages": 8,
+    "longPauseMs": 60000
+  },
+
+  "notify": {
+    "desktop": true,
+    "webhookUrl": ""
+  }
+}
